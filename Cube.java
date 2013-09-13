@@ -15,9 +15,10 @@ public class Cube {
 	private static int[][] right;
 	private static int[][] back;
 	private static int[][] bottom;
+	
+	Random rand = new Random();
 
 	public Cube(int[][][] cube) {
-		Random rand = new Random();
 		top = cube[0];
 		left = cube[1];
 		front = cube[2];

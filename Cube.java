@@ -310,9 +310,9 @@ public class Cube {
 		for (int i = 0; i < n; i++) {
 			switch (rand.nextInt(numMoves)) {
 			case 0: rotate_left();
-				break();
+				break;
 			case 1: rotate_right();
-				break();
+				break;
 			case 2: rotate_down();
 				break;
 			case 3: cube_clockwise();

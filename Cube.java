@@ -337,10 +337,32 @@ public class Cube {
 			}
 		}
 	}
-
+	//SOLVER --------------------------------------------
+	public void random_solver(){
+		while(score() < 10){
+			System.out.println("cube still sucks.");
+			jumble(1);
+		}
+	}
+	public int score(){
+		HashMap map = new HashMap();
+		int score_top = 0;
+		int score_left = 0;
+		int score_front = 0;
+		int score_right = 0;
+		int score_back = 0;
+		int score_bottom = 0;
+		for (int x=0; x<3; x++) {
+			for (int y=0; y<3; y++) {
+				//heuristic function: COUNT HOW MANY SQUARES ARE THE SAME. THIS IS THE SCORE.
+			}
+		}
+		int score = score_top + score_left + score_front + score_right + score_back + score_bottom;
+		return score;
+	}
 	public static void main(String[] args){
 		Reader r = new Reader();
-		Cube c = new Cube(r.read("jumbled.txt"));
+		Cube c = new Cube(r.read("solved.txt"));
 		c.cube_counterclockwise();
 		r.write(c.toWrite(), "j-rotate-counterclockwise.txt");
 	}

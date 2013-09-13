@@ -24,7 +24,6 @@ public class Cube {
 		right = cube[3];
 		back = cube[4];
 		bottom = cube[5];
-		System.out.println(">>>>>>: " + top.toString());
 
 	}
 

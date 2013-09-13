@@ -340,11 +340,9 @@ public class Cube {
 
 	public static void main(String[] args){
 		Reader r = new Reader();
-		Cube c = new Cube(r.read("solved.txt"));
-		r.write(c.toWrite(), "result.txt");
+		Cube c = new Cube(r.read("jumbled.txt"));
 		c.cube_counterclockwise();
-
-		r.write(c.toWrite(), "result2.txt");
+		r.write(c.toWrite(), "j-rotate-counterclockwise.txt");
 	}
 
 

@@ -1,0 +1,6 @@
+b,b,b,b,b,b,b,b,b
+w,w,w,w,w,w,w,w,w
+r,r,r,r,r,r,r,r,r
+y,y,y,y,y,y,y,y,y
+o,o,o,o,o,o,o,o,o
+g,g,g,g,g,g,g,g,g

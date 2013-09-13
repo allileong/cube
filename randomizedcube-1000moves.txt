@@ -1,0 +1,6 @@
+y,y,y,y,o,y,y,y,y
+y,y,y,y,y,y,y,y,y
+y,y,y,y,g,y,y,y,y
+y,y,y,y,w,y,y,y,y
+y,y,y,y,b,y,y,y,y
+y,y,y,y,r,y,y,y,y

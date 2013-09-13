@@ -1,5 +1,7 @@
 Welcome.
 
+HOWTO: modify the main() function in Cube.java to make moves on the cube.
+
 REPRESENTATION: Rubik's cube is represented as 6 2-d arrays, each representing a face. 
 
 BASIC MOVES: Basic methods are only called on the front face, and include rotating the right column up/down and rotating the left column up/down.

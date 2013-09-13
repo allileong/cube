@@ -1,3 +1,4 @@
+import util.Random;
 
 public class Cube {
 
@@ -16,7 +17,7 @@ public class Cube {
 	private static int[][] bottom;
 
 	public Cube(int[][][] cube) {
-
+		Random rand = new Random();
 		top = cube[0];
 		left = cube[1];
 		front = cube[2];
@@ -303,6 +304,38 @@ public class Cube {
 	public int[][][] toWrite() {
 		int[][][] result = {top, left, front, right, back, bottom};
 		return result;
+	}
+	
+	public void jumble(int n) {
+		int numMoves = 12;
+		for (int i = 0; i < n; i++) {
+			switch (rand.nextInt(numMoves)) {
+			case 0: rotate_left();
+				break();
+			case 1: rotate_right();
+				break();
+			case 2: rotate_down();
+				break;
+			case 3: cube_clockwise();
+				break;
+			case 4: cube_counterclockwise();
+				break;
+			case 5: right_up();
+				break;
+			case 6: right_down();
+				break;
+			case 7: middle_up();
+				break;
+			case 8: middle_down();
+				break;
+			case 9: left_up();
+				break;
+			case 10: left_down();
+				break;
+			case 11: rotate_up();
+				break;
+			}
+		}
 	}
 
 	public static void main(String[] args){

@@ -1,6 +1,8 @@
 Welcome.
 
 HOWTO: modify the main() function in Cube.java to make moves on the cube.
+Create a Cube object, and call methods within cube to move it around. The moves are located in the MOVES sections.
+Create a Reader object, and call read and write with the text file name (as in the file) to write and read.
 
 REPRESENTATION: Rubik's cube is represented as 6 2-d arrays, each representing a face. 
 
